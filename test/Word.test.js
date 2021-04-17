@@ -29,6 +29,7 @@ describe("Word class", () => {
       word.guessLetter("i");
       expect(word.guessedCorrectly()).toBe(true);
     });
+
     it("returns false if at least one letter is incorrect", () => {
       const word = new Word("hi");
       word.guessLetter("h");
